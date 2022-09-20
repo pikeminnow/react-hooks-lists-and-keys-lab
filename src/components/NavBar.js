@@ -4,7 +4,10 @@ function NavBar() {
   const links = ["home", "about", "projects"];
 
   const navLinks = links.map((link) => {
-    return <a href={'#' + link} >{link}</a>
+    let linkEntries = Object.entries({ link });
+    console.log(linkEntries)
+    let crunchLink = "#" + linkEntries[0][1];
+    return <a href={crunchLink} >{link}</a>
   })
 
   return <nav>

@@ -7,7 +7,7 @@ function NavBar() {
     let linkEntries = Object.entries({ link });
     console.log(linkEntries)
     let crunchLink = "#" + linkEntries[0][1];
-    return <a href={crunchLink} >{link}</a>
+    return <a key={link} href={crunchLink} >{link}</a>
   })
 
   return <nav>
